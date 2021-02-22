@@ -18,6 +18,10 @@ class ContentsController < ApplicationController
         render :new
        end
     end
+
+    def edit
+        @content = Content.find(params[:id])
+    end
     
     private
 
