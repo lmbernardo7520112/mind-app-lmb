@@ -11,6 +11,7 @@
   </head>
 
   <body>
+  <div class="container">
     <% if user_signed_in? %>
       <%= link_to 'Home', home_index_path %>
       <%= link_to 'Contents', contents_path %>
@@ -20,5 +21,6 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+  </div>
   </body>
 </html>
